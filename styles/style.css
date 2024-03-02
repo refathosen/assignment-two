@@ -167,7 +167,7 @@
 .your-destination {
   width: 100%;
   max-width: 1170px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   margin: 0px auto 100px;
 }
 .your-destination .text-container {
@@ -184,6 +184,11 @@
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 48px;
+}
+.your-destination-img-container .img-rows {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 22px;
 }
 
 /* why choose us section styles */
@@ -253,7 +258,6 @@
   max-width: 1170px;
   /* border: 2px solid red; */
   margin: 0px auto 100px;
- 
 }
 .deals-discounts h3 {
   color: rgb(19, 19, 24);
@@ -338,32 +342,32 @@
   border: 0;
 }
 /* instagram section styles */
-.instagram{
+.instagram {
   width: 100%;
   max-width: 1170px;
   /* border: 2px solid red; */
   margin: 0px auto 100px;
 }
-.instagram h3{
+.instagram h3 {
   color: rgb(19, 19, 24);
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 24px;
   text-align: center;
 }
-.instagram p{
+.instagram p {
   color: rgba(19, 19, 24, 0.7);
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 48px;
   text-align: center;
 }
-.instagram-img-container{
+.instagram-img-container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-.instagram-img-container img{
+.instagram-img-container img {
   width: 100%;
   border-radius: 16px;
 }
