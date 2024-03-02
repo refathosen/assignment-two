@@ -1,8 +1,248 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Mulish", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+/* shared styles */
+.orange {
+  color: #ff5400;
+}
+.btn-primary {
+  border-radius: 8px;
+  background: rgb(255, 84, 0);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 13px 34px;
+  border: 0;
+}
+/* header section styles */
+
+/* nav related styles */
+
+.nav {
+  max-width: 1170px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+.nav-img-title {
+  display: flex;
+  gap: 16px;
+}
+.nav-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+.nav ul {
+  display: flex;
+}
+.nav ul li {
+  list-style: none;
+  margin-right: 44px;
+}
+.nav ul a {
+  text-decoration: none;
+  color: rgb(66, 66, 71);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* banner section styles */
+.banner {
+  /* border: 2px solid red; */
+  width: 100%;
+  max-width: 1170px;
+  margin: 50px auto 100px;
+  border-radius: 16px;
+  background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+  background-repeat: no-repeat;
+}
+.banner-container {
+  padding: 106px 185px;
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 24, 0.8),
+    rgba(19, 19, 24, 0) 100%
+  );
+}
+.banner-content {
+  text-align: center;
+}
+.banner-content-title {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.banner-content-description {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 41px;
+}
+.banner-inputs {
+  width: 100%;
+  /* border: 2px solid red; */
+  padding: 16px;
+  display: flex;
+  gap: 24px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.banner-inputs input[type="text"] {
+  width: 22%;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  border: 0;
+  padding: 16px;
+}
+.banner-inputs .banner-btn {
+  width: 22%;
+  border-radius: 8px;
+  background: rgb(255, 84, 0);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 13px 34px;
+  border: 0;
+}
+
+/* popular tours section styles */
+.popular-tours {
+  width: 100%;
+  max-width: 1170px;
+  /* border: 2px solid red; */
+  margin: 0px auto 100px;
+}
+.popular-tours-container {
+  display: flex;
+}
+.popular-tours-container .section-content {
+  width: 50%;
+  color: rgb(90, 90, 93);
+  font-size: 1rem;
+  padding-right: 10px;
+}
+.popular-tours-container .section-content h3 {
+  color: rgb(19, 19, 24);
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.popular-tours-container .section-content p {
+  margin-bottom: 24px;
+}
+.popular-tours-container .section-content li {
+  margin-bottom: 24px;
+}
+.popular-tours-container .section-content ul {
+  padding: 22px;
+}
+.popular-tours-container .section-content button {
+  border-radius: 8px;
+  background: rgb(255, 84, 0);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 13px 34px;
+  border: 0;
+}
+.popular-tours-container .section-img {
+  width: 50%;
+}
+.popular-tours-container .section-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* your destination section styles */
+.your-destination {
+  width: 100%;
+  max-width: 1170px;
+  border: 2px solid red;
+  margin: 0px auto 100px;
+}
+.your-destination .text-container {
+  text-align: center;
+}
+.your-destination .text-container h3 {
+  color: rgb(19, 19, 24);
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.your-destination .text-container p {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+
+/* why choose us section styles */
+.why-choose-us {
+  width: 100%;
+  max-width: 1170px;
+  /* border: 2px solid red; */
+  margin: 0px auto 100px;
+}
+.why-choose-us .text-container {
+  text-align: center;
+}
+.why-choose-us .text-container h3 {
+  color: rgb(19, 19, 24);
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.why-choose-us .text-container p {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.card-container .card {
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 32px;
+  width: calc(50% - 12px);
+  height: 284px;
+}
+.card-container .first {
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+.card-container .second {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+.card-container .third {
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}
+.card-container .card h4 {
+  color: rgb(19, 19, 24);
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+.card-container .card p {
+  color: rgb(90, 90, 93);
+  font-size: 1rem;
+  font-weight: 400;
 }
