@@ -8,6 +8,7 @@
 }
 
 /* shared styles */
+
 .orange {
   color: #ff5400;
 }
@@ -30,24 +31,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 2px solid red; */
 }
 .nav-img-title {
   display: flex;
   gap: 16px;
+  align-items: center;
 }
 .nav-title {
   font-size: 2.25rem;
   font-weight: 800;
 }
-.nav ul {
-  display: flex;
+.menu-toggle input {
+  display: none;
 }
-.nav ul li {
+.menu {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu li {
+  display: inline-block;
   margin-right: 44px;
 }
-.nav ul a {
+.menu li:last-child {
+  margin-right: 0;
+}
+.menu a {
   text-decoration: none;
   color: rgb(66, 66, 71);
   font-size: 1rem;
@@ -56,7 +65,6 @@
 
 /* banner section styles */
 .banner {
-  /* border: 2px solid red; */
   width: 100%;
   max-width: 1170px;
   margin: 50px auto 100px;
@@ -90,7 +98,6 @@
 }
 .banner-inputs {
   width: 100%;
-  /* border: 2px solid red; */
   padding: 16px;
   display: flex;
   gap: 24px;
@@ -119,7 +126,6 @@
 .popular-tours {
   width: 100%;
   max-width: 1170px;
-  /* border: 2px solid red; */
   margin: 0px auto 100px;
 }
 .popular-tours-container {
@@ -167,7 +173,6 @@
 .your-destination {
   width: 100%;
   max-width: 1170px;
-  /* border: 2px solid red; */
   margin: 0px auto 100px;
 }
 .your-destination .text-container {
@@ -190,12 +195,36 @@
   gap: 22px;
   margin-bottom: 22px;
 }
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6,
+.item-7 {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+.maldives,
+.indonesia,
+.srilanka,
+.america,
+.kashmir,
+.bangladesh,
+.bandarban {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* why choose us section styles */
 .why-choose-us {
   width: 100%;
   max-width: 1170px;
-  /* border: 2px solid red; */
   margin: 0px auto 100px;
 }
 .why-choose-us .text-container {
@@ -256,7 +285,6 @@
 .deals-discounts {
   width: 100%;
   max-width: 1170px;
-  /* border: 2px solid red; */
   margin: 0px auto 100px;
 }
 .deals-discounts h3 {
@@ -341,42 +369,11 @@
   padding: 14px 24px;
   border: 0;
 }
-/* instagram section styles */
-.instagram {
-  width: 100%;
-  max-width: 1170px;
-  /* border: 2px solid red; */
-  margin: 0px auto 100px;
-}
-.instagram h3 {
-  color: rgb(19, 19, 24);
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin-bottom: 24px;
-  text-align: center;
-}
-.instagram p {
-  color: rgba(19, 19, 24, 0.7);
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 48px;
-  text-align: center;
-}
-.instagram-img-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-.instagram-img-container img {
-  width: 100%;
-  border-radius: 16px;
-}
 
 /* simple perfect place section start */
 .perfect-place {
   width: 100%;
   max-width: 1170px;
-  /* border: 2px solid red; */
   margin: 0px auto 100px;
 }
 .perfect-place-container {
@@ -387,7 +384,6 @@
   color: rgb(90, 90, 93);
   font-size: 1rem;
   padding-right: 10px;
-  /* border: 3px solid purple; */
 }
 .perfect-place-container .section-content h3 {
   color: rgb(19, 19, 24);
@@ -417,25 +413,58 @@
 }
 .perfect-place-container .section-text-img {
   width: 50%;
-  /* border: 3px solid green; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../Images/Group\ 40089.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.perfect-place-container .section-text-img img {
+  width: 100%;
+  height: 100%;
 }
 .perfect-place-container .section-text-img h4 {
-  color: rgb(255, 255, 255);
-  font-size: 1.5rem;
-  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+/* instagram section styles */
+.instagram {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0px auto 100px;
+}
+.instagram h3 {
+  color: rgb(19, 19, 24);
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.instagram p {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 48px;
+  text-align: center;
+}
+.instagram-img-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.instagram-img-container img {
+  width: 100%;
+  border-radius: 16px;
+}
+
 
 /* newsletter section styles */
 .newsletter {
   width: 100%;
   max-width: 1170px;
-  /* border: 2px solid red; */
   margin: 0px auto 50px;
 }
 .newsletter-container {
@@ -444,7 +473,6 @@
 }
 .newsletter-input-container {
   width: calc(40% - 12px);
-  /* border: 2px solid rgb(91, 10, 222); */
   padding: 40px;
   box-sizing: border-box;
   border: 1px solid rgb(255, 84, 0);
@@ -487,7 +515,11 @@
 }
 .newsletter-img-container {
   width: calc(60% - 12px);
-  /* border: 2px solid rgb(227, 20, 144); */
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 1.75rem;
+  font-weight: 800;
 }
 .newsletter-img-container img {
   width: 100%;
@@ -496,13 +528,12 @@
   border: 0;
   border-radius: 16px;
   background: rgb(255, 84, 0);
-  padding: 16px 20px;
-  width: 324px;
-  position: relative;
+  padding: 18px 25px;
+  position: absolute;
+  top: 61%;
+  left: 56%;
+  transform: translate(-50%, -50%);
   transform: rotate(-19.63deg);
-  bottom: 170px;
-  left: 354px;
-  text-align: center;
 }
 .save-upto-badge p {
   color: rgb(255, 255, 255);
@@ -520,7 +551,6 @@
 .footer {
   text-align: center;
   background: rgba(19, 19, 24, 0.05);
-  /* max-width: 1440px; */
   margin: 0 auto;
 }
 .footer-img-title {
@@ -550,7 +580,6 @@
 
 .footer-icons {
   margin-bottom: 50px;
-  /* border: 2px solid tomato; */
 }
 .footer hr {
   width: 70%;

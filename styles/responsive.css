@@ -1,5 +1,192 @@
 /* Mobile or small device related styles */
 
 @media screen and (max-width: 600px) {
+  .nav {
+    flex-direction: row;
+    gap: 23px;
+    align-items: center;
+  }
+  .nav-title {
+    font-size: 2rem;
+  }
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    padding: 20px;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+  }
+  .menu li {
+    display: block;
+    margin: 0;
+  }
+  .menu a {
+    display: block;
+    padding: 20px;
+  }
+  .menu-toggle span {
+    display: block;
+    background-color: black;
+    height: 3px;
+    width: 25px;
+    margin-bottom: 5px;
+  }
 
+  header,
+  .popular-tours,
+  .your-destination,
+  .why-choose-us,
+  .perfect-place,
+  .instagram,
+  .newsletter,
+  .deals-discounts {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .popular-tours-container,
+  .card-container,
+  .perfect-place-container,
+  .newsletter-container,
+  .banner-inputs,
+  nav {
+    flex-direction: column;
+  }
+
+  .banner-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 40px;
+  }
+  .banner-content-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .banner-content-description {
+    margin-bottom: 35px;
+  }
+  .banner-inputs {
+    gap: 12px;
+    width: 80%;
+  }
+  .banner-inputs input[type="text"] {
+    width: 100%;
+  }
+  .banner-inputs .banner-btn {
+    width: 100%;
+  }
+
+  .popular-tours-container .section-content {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .popular-tours-container .section-img {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+
+  .deals-discounts {
+    margin-top: 24px;
+  }
+  .deals-discounts-banner-one,
+  .deals-discounts-banner-two,
+  .deals-discounts-banner-three {
+    flex-direction: column;
+    padding: 180px 16px 20px 16px;
+    background-position: center;
+    height: 100%;
+  }
+  .deals-discounts p {
+    margin-bottom: 20px;
+  }
+  .deals-banner-container {
+    width: 100%;
+    padding: 25px 20px;
+  }
+
+
+  .perfect-place-container .section-content h3 {
+    font-size: 2rem;
+  }
+
+
+  .your-destination .text-container h3 {
+    font-size: 2rem;
+  }
+  .your-destination-img-container .img-rows {
+    flex-direction: column;
+  }
+  .your-destination-img-container .img-rows img {
+    width: 100%;
+    height: 100%;
+  }
+  .card-container .card {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .why-choose-us .text-container h3 {
+    font-size: 2rem;
+  }
+
+
+  .perfect-place-container .section-content {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .perfect-place-container .section-text-img {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .perfect-place {
+    margin-top: 24px;
+  }
+
+  .instagram h3 {
+    font-size: 2rem;
+  }
+  .instagram-img-container {
+    grid-template-columns: 1fr;
+    margin-bottom: 24px;
+  }
+
+
+  .newsletter-input-container,
+  .newsletter-img-container {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .save-upto-badge {
+    padding: 5px 20px;
+    top: 58%;
+    left: 48%;
+  }
+  .save-upto-badge p {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2px;
+  }
+  .save-upto-badge h3 {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  
+  .footer-copyright {
+    padding-bottom: 70px;
+  }
 }
